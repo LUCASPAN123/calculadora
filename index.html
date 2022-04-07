@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="center">
+        <img src=".img/iphone.png" alt="">
+        <div class="calculadora">
+
+            <div class="CC">
+
+                <input value="0" type="text" id="visor" readonly>
+
+            </div>
+
+            <div>
+
+                <button class="clear" onclick="resetObj()">C</button>
+                <button class="clear" onclick="setNum('')">CE</button>
+
+                <button class="operator" value="/" onclick=" setType(this.value)">/</button>
+
+            </div>
+
+            <div class="secline">
+
+                <button value="7" onclick="setNum(this.value)">7</button>
+                <button value="8" onclick="setNum(this.value)">8</button>
+                <button value="9" onclick="setNum(this.valeu)">9</button>
+
+                <button class="operator" value="*" onclick="setType(this.value)">*</button>
+
+            </div>
+
+            <div class="thdline">
+
+                <button value="4" onclick="setNum(this.value)">4</button>
+                <button value="5" onclick="setNum(this.value)">5</button>
+                <button value="6" onclick="setNum(this.value)">6</button>
+
+                <button class="operator" value="-" onclick="setType(this.value)">-</button>
+
+            </div>
+
+            <div class="frtline">
+
+                <button value="1" onclick="setNum(this.value)">1</button>
+                <button value="2" onclick="setNum(this.value)">2</button>
+                <button value="3" onclick="setNum(this.value)">3</button>
+
+                <button class="operator" value="+" onclick="setType(this.value)">+</button>
+
+            </div>
+
+            <div class="fvline">
+
+                <button class="zero" value="0" onclick="setNum(this.value)">0</button>
+                <button value="." onclick="setNum(this.value)">.</button>
+
+                <button class="operator" value="=" onclick="getRes()">=</button>
+
+              </div>
+
+        </div>
+    </div>
+</body>
+</html>
